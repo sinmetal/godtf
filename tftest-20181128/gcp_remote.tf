@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "tfstate-godtf-sinmetal"
+    bucket = "tfstate-tftest-20181128"
     prefix = "terraform/state"
   }
 }
