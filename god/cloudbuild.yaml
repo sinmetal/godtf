@@ -1,7 +1,10 @@
 steps:
   - name: 'hashicorp/terraform:full'
     args: [ 'init']
+    dir: 'god'
   - name: 'hashicorp/terraform:full'
     args: [ 'plan', '.']
+    dir: 'god'
   - name: 'hashicorp/terraform:full'
     args: [ 'apply', '-auto-approve', '.']
+    dir: 'god'
