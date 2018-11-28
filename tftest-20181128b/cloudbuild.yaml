@@ -1,0 +1,10 @@
+steps:
+  - name: 'hashicorp/terraform:full'
+    args: [ 'init']
+    dir: 'tftest-20181128b'
+  - name: 'hashicorp/terraform:full'
+    args: [ 'plan', '.']
+    dir: 'tftest-20181128b'
+  - name: 'hashicorp/terraform:full'
+    args: [ 'apply', '-auto-approve', '.']
+    dir: 'tftest-20181128b'
