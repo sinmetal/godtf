@@ -1,12 +1,10 @@
 steps:
   - name: 'hashicorp/terraform:full'
     args: [ 'init']
-    dir: 'god'
+    dir: 'tftest-20181128f'
   - name: 'hashicorp/terraform:full'
     args: [ 'plan', '.']
-    dir: 'god'
+    dir: 'tftest-20181128f'
   - name: 'hashicorp/terraform:full'
     args: [ 'apply', '-auto-approve', '.']
-    dir: 'god'
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: [ 'builds', 'submit', '--config', 'tftest-20181128f/cloudbuild.yaml']
+    dir: 'tftest-20181128f'
