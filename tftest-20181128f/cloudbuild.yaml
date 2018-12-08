@@ -8,3 +8,4 @@ steps:
   - name: 'hashicorp/terraform:full'
     args: [ 'apply', '-auto-approve', '.']
     dir: 'tftest-20181128f'
+logsBucket: 'gs://godtf-sinmetal-buildlog'
