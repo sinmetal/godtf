@@ -11,3 +11,10 @@ resource "google_storage_bucket" "sinmetal-tfstate-20181128f" {
   location      = "us-central1"
   storage_class = "STANDARD"
 }
+
+resource "google_storage_bucket" "godtf-sinmetal-buildlog" {
+  project       = "godtf-sinmetal"
+  name          = "godtf-sinmetal-buildlog"
+  location      = "us-central1"
+  storage_class = "STANDARD"
+}
