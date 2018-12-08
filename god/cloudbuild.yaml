@@ -9,4 +9,4 @@ steps:
     args: [ 'apply', '-auto-approve', '.']
     dir: 'god'
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: [ 'builds', 'submit', '--config', 'tftest-20181128f/cloudbuild.yaml']
+    args: [ 'builds', 'submit', '--project', 'tftest-20181128f', '--config', 'tftest-20181128f/cloudbuild.yaml']
