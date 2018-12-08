@@ -6,6 +6,6 @@ resource "google_storage_bucket_iam_member" "sinmetal-tfstate-20181128f-cloud-bu
 
 resource "google_storage_bucket_iam_member" "godtf-sinmetal-buildlog-cloud-build-log" {
   bucket = "${google_storage_bucket.godtf-sinmetal-buildlog.name}"
-  role   = "roles/storage.objectCreator"
+  role   = "roles/storage.objectAdmin"
   member = "serviceAccount:${google_project.tftest-20181128f.number}@cloudbuild.gserviceaccount.com"
 }
