@@ -9,5 +9,5 @@ steps:
     args: [ 'apply', '-auto-approve', '.']
     dir: 'god'
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: [ 'builds', 'submit', '--project', 'tftest-20181128f', '--gcs-log-dir', 'buildlog', '--config', 'tftest-20181128f/cloudbuild.yaml']
+    args: [ 'builds', 'submit', '--project', 'tftest-20181128f', '--config', 'tftest-20181128f/cloudbuild.yaml']
 logsBucket: 'gs://godtf-sinmetal-buildlog'
