@@ -1,6 +1,7 @@
 resource "google_project_services" "tftest-20181128d" {
   project = "${google_project.tftest-20181128d.project_id}"
-  services   = [
+
+  services = [
     "iam.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "cloudbuild.googleapis.com",
@@ -9,13 +10,14 @@ resource "google_project_services" "tftest-20181128d" {
     "logging.googleapis.com",
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
-    "sourcerepo.googleapis.com"
+    "sourcerepo.googleapis.com",
   ]
 }
 
 resource "google_project_services" "tftest-20181128e" {
   project = "${google_project.tftest-20181128e.project_id}"
-  services   = [
+
+  services = [
     "iam.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "cloudbuild.googleapis.com",
@@ -24,13 +26,14 @@ resource "google_project_services" "tftest-20181128e" {
     "logging.googleapis.com",
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
-    "sourcerepo.googleapis.com"
+    "sourcerepo.googleapis.com",
   ]
 }
 
 resource "google_project_services" "tftest-20181128f" {
   project = "${google_project.tftest-20181128f.project_id}"
-  services   = [
+
+  services = [
     "iam.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "cloudbuild.googleapis.com",
@@ -39,6 +42,6 @@ resource "google_project_services" "tftest-20181128f" {
     "logging.googleapis.com",
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
-    "sourcerepo.googleapis.com"
+    "sourcerepo.googleapis.com",
   ]
 }
