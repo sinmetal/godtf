@@ -11,7 +11,7 @@ resource "google_project_services" "tftest-20181128d" {
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
-    "compute.googleaps.com",
+    "compute.googleapis.com",
   ]
 }
 
@@ -28,7 +28,7 @@ resource "google_project_services" "tftest-20181128e" {
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
-    "compute.googleaps.com",
+    "compute.googleapis.com",
   ]
 }
 
@@ -45,6 +45,6 @@ resource "google_project_services" "tftest-20181128f" {
     "iamcredentials.googleapis.com",
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
-    "compute.googleaps.com",
+    "compute.googleapis.com",
   ]
 }
