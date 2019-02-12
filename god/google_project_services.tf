@@ -12,6 +12,7 @@ resource "google_project_services" "tftest-20181128d" {
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
     "compute.googleapis.com",
+    "oslogin.googleapis.com",
   ]
 }
 
@@ -29,6 +30,7 @@ resource "google_project_services" "tftest-20181128e" {
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
     "compute.googleapis.com",
+    "oslogin.googleapis.com",
   ]
 }
 
@@ -46,5 +48,6 @@ resource "google_project_services" "tftest-20181128f" {
     "storage-api.googleapis.com",
     "sourcerepo.googleapis.com",
     "compute.googleapis.com",
+    "oslogin.googleapis.com",
   ]
 }
