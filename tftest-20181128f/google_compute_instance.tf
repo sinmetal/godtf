@@ -1,9 +1,9 @@
 resource "google_compute_instance" "default" {
-  project                                = "tftest-20181128f"
-  name                                   = "test"
-  machine_type                           = "n1-standard-1"
-  zone                                   = "us-central1-a"
-  network_interface.access_config.nat_ip = "{$google_compute_address.my_address.name}"
+  project                                    = "tftest-20181128f"
+  name                                       = "test"
+  machine_type                               = "n1-standard-1"
+  zone                                       = "us-central1-a"
+  network_interface.0.access_config.0.nat_ip = "{$google_compute_address.my_address.name}"
 
   tags = ["foo", "bar"]
 
