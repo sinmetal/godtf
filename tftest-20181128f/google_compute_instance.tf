@@ -1,4 +1,5 @@
 resource "google_compute_instance" "default" {
+  project      = "tftest-20181128f"
   name         = "test"
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
